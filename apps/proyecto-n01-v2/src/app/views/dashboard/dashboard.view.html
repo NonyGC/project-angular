@@ -1,0 +1,10 @@
+<div class="container pt-5">
+
+  <div class="row">
+    <ng-container *ngFor="let item of courses">
+      <ngc-card [contentClass]="['card', 'col-3', 'mb-2']" [cardModel]="item">
+        <ngc-button [routerLink]="['/curso', item.id]">Información</ngc-button>
+      </ngc-card>
+    </ng-container>
+  </div>
+</div>
